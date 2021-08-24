@@ -5,7 +5,7 @@
 - Landing Page com UI elegante para impactar possível cliente.
 - Usado apenas HTML, CSS e Javascript Puro.
 - Interface Dark.
-- With animations when scrolling. (*Em Desenvolvimento*)
+- Animações quando cada section for visível ao scrollar. (*Em Desenvolvimento*)
 - Desenvolvido para Desktop. (*Em Desenvolvimento para mobile*)
 
 ![](/preview.png)
