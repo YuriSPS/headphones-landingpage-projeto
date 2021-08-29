@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background: #0f0f10;
 }
 
@@ -30,6 +31,11 @@ body::-webkit-scrollbar-thumb {
   border-left: none;
   border-right: none;
   border-radius: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 section {
@@ -138,7 +144,7 @@ height: 100vh;
 } 
 
 .home-subtitle {
-  padding-top: 190px;
+  padding-top: 20vh;
   padding-bottom: 40px;
   font-size: 4.2rem;
   color: #fff;
@@ -174,15 +180,18 @@ height: 100vh;
 
 /*========================= Sponsor =========================*/
 .sponsors {
+  width: 100%;
+  margin: 160px auto 0 auto;
   display: flex;
-  justify-content: center;
-  padding: 140px;
+  justify-content: space-around;
 }
 
-.sponsor {
-  max-width: 100px;
-  height: auto;
-  margin-left: 140px;
+.sponsors div {
+  cursor: pointer;
+}
+
+.sponsors img {
+  width: 100px;
 }
 
 /*========================= Specs =========================*/
@@ -354,4 +363,231 @@ height: 100vh;
 .fa-info-circle {
   font-size: 1.2em;
   color: #fff;
+}
+
+/* Discount Section */
+.discount {
+  max-width: 900px;
+  padding: 50px;
+  background: #181a1b;
+  border-radius: 10px;
+  flex-direction: row;
+}
+
+.discount-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount-img {
+  flex: 1;
+}
+
+.discount-img img {
+  width: 350px;
+  height: auto;
+}
+
+.discount-title {
+  font-size: 1.5em;
+  color: #fff;
+  padding-bottom: 16px;
+  text-align: left;
+}
+
+.discount-description {
+  font-size: 1em;
+  color: #bdc0c2;
+  margin-bottom: 32px;
+}
+
+.btn-discount {
+  display: inline-block;
+  padding: 16px 22px;
+  background: #0a0a0b;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn-discount:hover {
+  transition: .4s;
+  background: #141515;
+}
+
+.fa-shopping-bag {
+  font-size: 1.2em;
+  color: white;
+  padding: 5px;
+}
+
+/* Products Session */
+.products {
+  max-width: 700px;
+}
+
+.products-title {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.products-title h2 {
+  background: linear-gradient(to bottom, #313435, #242627);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4.2em;
+}
+
+.products-list {
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.products-list li {
+  position: relative;
+  padding: 14px;
+  height: 132px;
+  width: 162px;
+  border-radius: 10px;
+  background: #181a1b;
+}
+
+.products-img {
+  position: absolute;
+  top: -3rem;
+  right: 50%;
+  transform: translateX(50%);
+  max-width: 100%;
+  height: auto;
+  padding: 0 33px;
+}
+
+.products-list-info {
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.products-list-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.products-list-title {
+  font-size: .8em;
+  color: #fff;
+}
+
+.products-price {
+  color: #bdc0c2;
+  font-size: .8em;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.fa-shopping-cart {
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+
+/* Footer */
+#footer {
+  padding: 120px 0 60px 0;
+}
+
+.footer {
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 2rem;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-title {
+  font-size: 1.4em;
+  color: #fff;
+}
+
+.footer-products a{
+  color: #fff;
+}
+
+.footer-support a {
+  color: #fff;
+}
+
+.footer-form {
+  margin-bottom: 32px;
+  display: flex;
+  padding: .5rem .75rem;
+  background: #181a1b;
+  border-radius: 12px;
+}
+
+.footer-form input {
+  border: none;
+  font-size: 1em;
+  color: #fff;
+  width: 90%;
+  margin-right: 12px;
+  background: #181a1b;
+}
+
+.fa-paper-plane {
+  font-size: 1em;
+  color: #fff;
+  padding: 12px;
+}
+
+.btn-form-footer {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: #0a0a0b;
+  color: #fff;
+}
+
+.footer-social-link {
+  margin-right: 12px;
+  padding: .35rem .75rem;
+  border-radius: .25rem;
+  background: #181a1b;
+  color: #fff;
+}
+
+.footer-social-link:hover {
+  background: #0a0a0b;
+}
+
+.copyright {
+  margin-top: 144px;
+}
+
+.copyright p {
+  
+  color: #fff;
+}
+
+.copyright-title {
+  margin: 0 auto;
 }
